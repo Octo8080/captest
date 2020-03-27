@@ -54,7 +54,7 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'tzinfo-data'#, platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # 以下を定義不要なものはコメントアウトする
 # mysqlかmariadbを使う
@@ -118,4 +118,6 @@ gem 'rails-i18n'
 
 group :deployment do
   gem "capistrano", "~> 3.12", require: false
+  gem 'capistrano-rbenv', '~> 2.1'
+  gem 'capistrano-bundler', '~> 1.6'
 end
