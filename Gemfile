@@ -120,4 +120,5 @@ group :deployment do
   gem "capistrano", "~> 3.12", require: false
   gem 'capistrano-rbenv', '~> 2.1'
   gem 'capistrano-bundler', '~> 1.6'
+  gem "capistrano-rails", "~> 1.4", require: false
 end

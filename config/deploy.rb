@@ -13,6 +13,10 @@ set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} #{fetch(:rbenv_path)}/bin/r
 # bundler設定
 set :linked_dirs, fetch(:linked_dirs, []) << '.bundle'
 
+# アプリケーションで共有するものを定義する。
+# デプロイしたバージョン間で共有されることになる。
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
+append :linked_files, 'config/database.yml', 'config/secrets.yml'
 
 
 # Default branch is :master
