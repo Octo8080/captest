@@ -16,7 +16,7 @@ set :linked_dirs, fetch(:linked_dirs, []) << '.bundle'
 # アプリケーションで共有するものを定義する。
 # デプロイしたバージョン間で共有されることになる。
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
-append :linked_files, 'config/database.yml', 'config/credentials.yml.enc'
+append :linked_files, 'config/database.yml', 'config/credentials.yml.enc','config/credentials/production.key'
 
 
 # Default branch is :master
