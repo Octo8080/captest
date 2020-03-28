@@ -20,7 +20,7 @@ test:
   <<: *devuser
 
 production:
-  <<: \*default
+  <<: *default
   database: test154/DB_production
   username: root
-  password: 
+  password:
