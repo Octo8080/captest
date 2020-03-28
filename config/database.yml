@@ -21,6 +21,6 @@ test:
 
 production:
   <<: *default
-  database: test154/DB_production
+  database: test154_DB_production
   username: root
   password:

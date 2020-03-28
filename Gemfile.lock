@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/seuros/capistrano-puma.git
+  revision: 87bfd747bd43a19b5d214e0272b76fb723cf1f5f
+  specs:
+    capistrano3-puma (4.0.0)
+      capistrano (~> 3.7)
+      capistrano-bundler
+      puma (~> 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -131,7 +140,8 @@ GEM
     nokogiri (1.10.9-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     public_suffix (4.0.3)
-    puma (3.12.4)
+    puma (4.3.3)
+      nio4r (~> 2.0)
     rack (2.2.2)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -228,6 +238,7 @@ DEPENDENCIES
   capistrano-bundler (~> 1.6)
   capistrano-rails (~> 1.4)
   capistrano-rbenv (~> 2.1)
+  capistrano3-puma!
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
@@ -236,7 +247,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   listen
   mysql2
-  puma (~> 3.11)
+  puma (~> 4.0)
   rails (~> 5.2.4, >= 5.2.4.1)
   rails-i18n
   sass-rails (~> 5.0)
