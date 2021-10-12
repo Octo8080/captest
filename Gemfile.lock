@@ -134,13 +134,13 @@ GEM
     net-scp (2.0.0)
       net-ssh (>= 2.6.5, < 6.0.0)
     net-ssh (5.2.0)
-    nio4r (2.5.2)
+    nio4r (2.5.8)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
     nokogiri (1.10.9-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     public_suffix (4.0.3)
-    puma (4.3.3)
+    puma (4.3.9)
       nio4r (~> 2.0)
     rack (2.2.2)
     rack-test (1.1.0)
@@ -247,7 +247,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   listen
   mysql2
-  puma (~> 4.0)
+  puma (~> 4.3)
   rails (~> 5.2.4, >= 5.2.4.1)
   rails-i18n
   sass-rails (~> 5.0)
